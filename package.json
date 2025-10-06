@@ -1,0 +1,23 @@
+{
+  "name": "playwright-automation-tests",
+  "version": "1.0.0",
+  "description": "This project will showcase automation tests being used to practice Playwright skills.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexMolCode/playwright-automation-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AlexMolCode/playwright-automation-tests/issues"
+  },
+  "homepage": "https://github.com/AlexMolCode/playwright-automation-tests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.7.0"
+  }
+}
