@@ -7,3 +7,5 @@ To begin with, I will be doing the Pop-Up Challenge on the [Candymapper site](ht
 The goal is to run the set of tests listed on both candymapper.com and candymapper.net.
 
 I will be using [Claude Code](https://claude.com/product/claude-code) integrated with VS Code to help implement Playwright automation.
+
+The initial test is [here](https://github.com/AlexMolCode/playwright-automation-tests/blob/main/tests/CandyMapper/candymappercom.spec.ts)
