@@ -8,4 +8,4 @@ The goal is to run the set of tests listed on both candymapper.com and candymapp
 
 I will be using [Claude Code](https://claude.com/product/claude-code) integrated with VS Code to help implement Playwright automation.
 
-The initial test is [here](https://github.com/AlexMolCode/playwright-automation-tests/blob/main/tests/CandyMapper/candymappercom.spec.ts)
+The initial test is [here](https://github.com/AlexMolCode/playwright-automation-tests/blob/main/tests/CandyMapper/candymappercom.spec.ts).
