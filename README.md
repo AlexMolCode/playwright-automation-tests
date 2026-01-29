@@ -18,8 +18,11 @@ The test is [here](https://github.com/AlexMolCode/playwright-automation-tests/bl
 5. Install dependencies: `npm install`
 6. Install the browsers Playwright uses(Chromium, Firefox, WebKit) : `npx playwright install`
 
-##Running Tests
+## Running Tests
 Run all tests: `npx playwright test`
+
 Run tests in headed mode (see the browser): `npx playwright test --headed`
+
 View the test report after running the tests above: `npx playwright show-report`
+
 Run the tests in Playwright test runner instead: `npx playwright test --ui`
