@@ -10,7 +10,7 @@ I am also using [Claude Code](https://claude.com/product/claude-code) integrated
 
 The test is [here](https://github.com/AlexMolCode/playwright-automation-tests/blob/main/tests/CandyMapper/candymappercom.spec.ts).
 
-## Running Tests Locally
+## Downloading Repo
 1. Make sure you have Git installed: [Download Git](https://git-scm.com/downloads)
 2. Make sure you have Node installed: [Download Node](https://nodejs.org)
 3. Clone this repo to your machine: `git clone https://github.com/AlexMolCode/playwright-automation-tests.git`
