@@ -12,7 +12,7 @@ The test is [here](https://github.com/AlexMolCode/playwright-automation-tests/bl
 
 ## Installing Repo to Desktop
 1. Make sure you have Git installed: [Download Git](https://git-scm.com/downloads)
-2. Make sure you have Node installed: [Download Node](https://nodejs.org)
+2. Make sure you have Node installed: [Download Node](https://nodejs.org/en/download)
 3. Clone this repo to your machine: `git clone https://github.com/AlexMolCode/playwright-automation-tests.git`
 4. Navigate to the downloaded folder: `cd playwright-automation-tests`
 5. Install dependencies: `npm install`
