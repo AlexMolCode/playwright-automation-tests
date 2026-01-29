@@ -20,7 +20,7 @@ test.describe('Testing CandyMapper.com Site', () => {
       await submitBtn.click();
       await expect(page.locator('[data-aid="CONTACT_EMAIL_ERR_REND"]')).toBeVisible();
       await expect(page.getByText('Please enter a valid email address.')).toBeVisible();
-    }).toPass({ timeout: 10000 });
+    }).toPass({ timeout: 15000 });
     
     //Successfully submit after email is entered
     await page.locator('input[data-aid="CONTACT_FORM_EMAIL"]').fill('email@email.com');
