@@ -17,7 +17,7 @@ How to test the app:
 - "Save Quote" button stores the offer in localStorage as "savedQuote"
 - On page load, if a savedQuote exists, a banner appears at the top
 
-The test is [here](https://github.com/AlexMolCode/playwright-automation-tests/blob/main/tests/RefinanceCalculator/refinance-calculator.spec.ts)
+The test is [here](https://github.com/AlexMolCode/playwright-automation-tests/blob/main/tests/RefinanceCalculator/refinance-calculator.spec.ts).
 
 ## Installing Repo to Desktop
 1. Make sure you have Git installed: [Download Git](https://git-scm.com/downloads)
