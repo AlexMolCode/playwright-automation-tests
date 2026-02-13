@@ -164,7 +164,6 @@ test.describe('Auto Loan Refinance Calculator', () => {
     await page.route('**/api/rates', async route => {
       await route.abort()
     });
-  
     await fillAndSubmitLoanForm(page, '18000', '6.5', '48');
 
     // Should display error message when clicking Check Rates
