@@ -1,13 +1,13 @@
 # Playwright QA Automation Portfolio
 
-## Candymapper test
-I will be doing the Pop-Up Challenge on the [Candymapper site](http://www.candymapper.com) recommended to me by [Paul Grossman](https://www.linkedin.com/in/pmgrossman/), an accomplished automation expert. 
+Both tests below were done while using the help of [Claude Code](https://claude.com/product/claude-code) integrated with VS Code to help implement Playwright automation.
 
-I am also using [Claude Code](https://claude.com/product/claude-code) integrated with VS Code to help implement Playwright automation.
+## Test 1 - Candymapper test
+I will be doing the Pop-Up Challenge on the [Candymapper site](http://www.candymapper.com) recommended to me by [Paul Grossman](https://www.linkedin.com/in/pmgrossman/), an accomplished automation expert. 
 
 The test is [here](https://github.com/AlexMolCode/playwright-automation-tests/blob/main/tests/CandyMapper/candymappercom.spec.ts).
 
-## Custom Auto Refinance App and API test
+## Test 2 - Custom Auto Loan Refinance App and API test
 How to test the app:
 - To test it manually, start the app server using `node app/refinance-calculator/server.js` and go to `http://localhost:4200`
 - User fills in: Remaining Balance, Current Interest Rate, Remaining Term
