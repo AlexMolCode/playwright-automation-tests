@@ -146,6 +146,19 @@ test.describe('Auto Loan Refinance Calculator', () => {
     await expect(page.getByText('Bank 3')).toBeVisible();
   });
 
+  // Dismiss the saved quote banner and verify it's removed from the page and localStorage
+  test('should dismiss saved quote when X button is clicked', async ({ page }) => {
+    await page.evaluate(() => localStorage.setItem('savedQuote', JSON.stringify({ lender: 'Bank 3', newRate: 3.2, termMonths: 12, monthlySavings: 50 })));
+    await page.reload();
+
+    await expect(page.getByText('Saved Quote')).toBeVisible();
+    await page.getByLabel('Dismiss saved quote').click();
+
+    await expect(page.getByText('Saved Quote')).toBeHidden();
+    const savedQuote = await page.evaluate(() => localStorage.getItem('savedQuote'));
+    expect(savedQuote).toBeNull();
+  });
+
   // Simulate not being able to reach the server via API at all
   test('should handle network failure gracefully', async ({ page }) => {
     await page.route('**/api/rates', async route => {

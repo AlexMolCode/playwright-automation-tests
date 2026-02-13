@@ -10,6 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const text = document.querySelector('.saved-quote-text');
       text.textContent = `${quote.lender} — ${quote.newRate}% APR, saving you $${quote.monthlySavings}/mo`;
       banner.classList.add('visible');
+
+      banner.querySelector('.dismiss-quote-btn').addEventListener('click', () => {
+        localStorage.removeItem('savedQuote');
+        banner.classList.remove('visible');
+      });
     } catch (e) { /* ignore corrupt data */ }
   }
 });

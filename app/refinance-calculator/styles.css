@@ -6,7 +6,9 @@ h1 { font-size: 1.75rem; margin-bottom: 24px; }
 /* Saved Quote Banner */
 .saved-quote-banner { display: none; background: #e8f5e9; border: 1px solid #a5d6a7; border-radius: 8px; padding: 16px; margin-bottom: 24px; }
 .saved-quote-banner.visible { display: block; }
-.saved-quote-banner h3 { font-size: 0.875rem; text-transform: uppercase; color: #2e7d32; margin-bottom: 4px; }
+.banner-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+.saved-quote-banner h3 { font-size: 0.875rem; text-transform: uppercase; color: #2e7d32; }
+.dismiss-quote-btn { background: none; border: none; color: #2e7d32; font-size: 1rem; font-weight: 600; cursor: pointer; padding: 0 4px; }
 .saved-quote-banner p { font-size: 1rem; }
 
 /* Form */
