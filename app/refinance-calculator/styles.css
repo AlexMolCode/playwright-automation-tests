@@ -1,0 +1,39 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #1a1a2e; }
+.container { max-width: 720px; margin: 0 auto; padding: 32px 16px; }
+h1 { font-size: 1.75rem; margin-bottom: 24px; }
+
+/* Saved Quote Banner */
+.saved-quote-banner { display: none; background: #e8f5e9; border: 1px solid #a5d6a7; border-radius: 8px; padding: 16px; margin-bottom: 24px; }
+.saved-quote-banner.visible { display: block; }
+.saved-quote-banner h3 { font-size: 0.875rem; text-transform: uppercase; color: #2e7d32; margin-bottom: 4px; }
+.saved-quote-banner p { font-size: 1rem; }
+
+/* Form */
+.form-card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 24px; }
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; font-weight: 600; margin-bottom: 6px; font-size: 0.875rem; }
+.form-group input { width: 100%; padding: 10px 12px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 1rem; }
+.form-group input:focus { outline: none; border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59,130,246,0.15); }
+.field-error { display: block; color: #991b1b; font-size: 0.8125rem; margin-top: 4px; min-height: 1.2em; }
+.check-rates-btn { width: 100%; padding: 12px; background: #3b82f6; color: #fff; font-size: 1rem; font-weight: 600; border: none; border-radius: 8px; cursor: pointer; }
+.check-rates-btn:hover { background: #2563eb; }
+.check-rates-btn:disabled { background: #93c5fd; cursor: not-allowed; }
+
+/* Results */
+.results-section { margin-top: 8px; }
+.results-section h2 { font-size: 1.25rem; margin-bottom: 16px; }
+.loading-spinner { display: none; text-align: center; padding: 24px; color: #6b7280; }
+.loading-spinner.visible { display: block; }
+.error-message { display: none; background: #fef2f2; border: 1px solid #fca5a5; color: #991b1b; border-radius: 8px; padding: 16px; text-align: center; }
+.error-message.visible { display: block; }
+
+/* Offer Cards */
+.offer-card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; }
+.offer-info h3 { font-size: 1.125rem; margin-bottom: 4px; }
+.offer-info .rate { color: #6b7280; font-size: 0.875rem; }
+.offer-savings { text-align: right; }
+.offer-savings .amount { font-size: 1.5rem; font-weight: 700; color: #16a34a; }
+.offer-savings .label { font-size: 0.75rem; color: #6b7280; }
+.save-quote-btn { margin-top: 8px; padding: 8px 16px; background: #f3f4f6; border: 1px solid #d1d5db; border-radius: 6px; cursor: pointer; font-size: 0.8125rem; font-weight: 500; }
+.save-quote-btn:hover { background: #e5e7eb; }
