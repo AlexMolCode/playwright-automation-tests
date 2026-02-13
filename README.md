@@ -9,13 +9,14 @@ The test is [here](https://github.com/AlexMolCode/playwright-automation-tests/bl
 
 ## Custom Auto Refinance App and API test
 How to test the app:
-- To test it manually, start the app server using `node app/refinance-calculator/server.js`
+- To test it manually, start the app server using `node app/refinance-calculator/server.js` and go to `http://localhost:4200`
 - User fills in: Remaining Balance, Current Interest Rate, Remaining Term
 - Clicks "Check Rates" → app sends POST /api/rates with { balance, rate, term }
 - API returns { offers: [{ lender, newRate, termMonths, monthlySavings }, ...] }
 - Offer cards render with lender name, rate, and monthly savings
 - "Save Quote" button stores the offer in localStorage as "savedQuote"
 - On page load, if a savedQuote exists, a banner appears at the top
+
 The test is [here](https://github.com/AlexMolCode/playwright-automation-tests/blob/main/tests/RefinanceCalculator/refinance-calculator.spec.ts))
 
 ## Installing Repo to Desktop
