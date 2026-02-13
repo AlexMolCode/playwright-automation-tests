@@ -8,14 +8,12 @@ I will be doing the Pop-Up Challenge on the [Candymapper site](http://www.candym
 The test is [here](https://github.com/AlexMolCode/playwright-automation-tests/blob/main/tests/CandyMapper/candymappercom.spec.ts).
 
 ## Test 2 - Custom Auto Loan Refinance App and API test
-How to test the app:
+How to test the app yourself to get familiar with it:
 - To test it manually, start the app server using `node app/refinance-calculator/server.js` and go to `http://localhost:4200`
 - User fills in: Remaining Balance, Current Interest Rate, Remaining Term
-- Clicks "Check Rates" → app sends POST /api/rates with { balance, rate, term }
-- API returns { offers: [{ lender, newRate, termMonths, monthlySavings }, ...] }
-- Offer cards render with lender name, rate, and monthly savings
-- "Save Quote" button stores the offer in localStorage as "savedQuote"
-- On page load, if a savedQuote exists, a banner appears at the top
+- Click the "Check Rates" button to send an API request and retrieve quotes
+- The API returns offers with cards listing lender name, rate, and monthly savings
+- Click the "Save Quote" button to store the selected offer as a banner at the top after a page refresh
 
 The test is [here](https://github.com/AlexMolCode/playwright-automation-tests/blob/main/tests/RefinanceCalculator/refinance-calculator.spec.ts).
 
