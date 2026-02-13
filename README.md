@@ -1,6 +1,6 @@
 # Playwright QA Automation Portfolio
 
-Both tests below were done while using the help of [Claude Code](https://claude.com/product/claude-code) integrated with VS Code to help implement Playwright automation.
+Both tests below were done while working with [Claude Code](https://claude.com/product/claude-code) integrated with VS Code to help implement Playwright automation.
 
 ## Test 1 - Candymapper test
 I will be doing the Pop-Up Challenge on the [Candymapper site](http://www.candymapper.com) recommended to me by [Paul Grossman](https://www.linkedin.com/in/pmgrossman/), an accomplished automation expert. 
