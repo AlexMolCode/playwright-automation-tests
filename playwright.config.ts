@@ -70,10 +70,10 @@ export default defineConfig({
     // },
   ],
 
-  /* Run your local dev server before starting the tests */
-  // webServer: {
-  //   command: 'npm run start',
-  //   url: 'http://localhost:3000',
-  //   reuseExistingServer: !process.env.CI,
-  // },
+  // Run the site using the command below to test the site manually
+  webServer: {
+    command: 'node app/refinance-calculator/server.js',
+    url: 'http://localhost:4200',
+    reuseExistingServer: !process.env.CI,
+  },
 });

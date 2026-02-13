@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Loan Refinance Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Auto Loan Refinance Calculator</h1>
+
+    <!-- Saved Quote Banner -->
+    <div class="saved-quote-banner" role="banner" aria-label="Saved Quote">
+      <div class="banner-header">
+        <h3>Saved Quote</h3>
+        <button class="dismiss-quote-btn" aria-label="Dismiss saved quote">X</button>
+      </div>
+      <p class="saved-quote-text"></p>
+    </div>
+
+    <!-- Loan Details Form -->
+    <div class="form-card">
+      <form id="loan-form" aria-label="Loan Details">
+        <div class="form-group">
+          <label for="balance">Remaining Balance ($)</label>
+          <input type="number" id="balance" name="balance" placeholder="e.g. 18000" />
+          <span class="field-error" id="balance-error" aria-live="polite"></span>
+        </div>
+        <div class="form-group">
+          <label for="rate">Current Interest Rate (%)</label>
+          <input type="number" id="rate" name="rate" placeholder="e.g. 6.5" step="0.1" />
+          <span class="field-error" id="rate-error" aria-live="polite"></span>
+        </div>
+        <div class="form-group">
+          <label for="term">Remaining Term (months)</label>
+          <input type="number" id="term" name="term" placeholder="e.g. 48" />
+          <span class="field-error" id="term-error" aria-live="polite"></span>
+        </div>
+        <button type="submit" class="check-rates-btn">Check Rates</button>
+      </form>
+    </div>
+
+    <!-- Results -->
+    <div class="results-section">
+      <div class="loading-spinner" role="status">Checking available rates...</div>
+      <div class="error-message" role="alert"></div>
+      <div id="offers-container" role="list" aria-label="Refinance Offers"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
