@@ -12,7 +12,7 @@ How to test the app yourself to get familiar with it:
 - To test it manually, start the app server using `node app/refinance-calculator/server.js` and go to `http://localhost:4200`
 - User fills in: Remaining Balance, Current Interest Rate, Remaining Term
 - Click the "Check Rates" button to send an API request and retrieve quotes
-- The API returns offers with cards listing lender name, rate, and monthly savings
+- The API returns quotes with cards listing lender name, rate, and monthly savings
 - Click the "Save Quote" button to store the selected offer as a banner at the top after a page refresh
 
 The test is [here](https://github.com/AlexMolCode/playwright-automation-tests/blob/main/tests/RefinanceCalculator/refinance-calculator.spec.ts).
