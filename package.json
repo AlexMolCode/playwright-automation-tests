@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "This project will showcase automation tests being used to practice Playwright skills.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "app": "node app/refinance-calculator/server.js",
+    "agent": "node agent/explore.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlexMolCode/playwright-automation-tests.git"
@@ -19,5 +22,9 @@
   "devDependencies": {
     "@playwright/test": "^1.55.1",
     "@types/node": "^24.7.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.87.0",
+    "dotenv": "^17.4.1"
   }
 }
