@@ -58,6 +58,9 @@ function validateForm() {
   } else if (parseInt(termInput.value, 10) < 1) {
     termError.textContent = 'Remaining Term must be at least 1 month.';
     isValid = false;
+  } else if (!Number.isInteger(parseFloat(termInput.value))) {
+    termError.textContent = 'Remaining Term must be a whole number.';
+    isValid = false;
   }
 
   return isValid;
