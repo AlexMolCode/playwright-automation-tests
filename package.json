@@ -4,6 +4,7 @@
   "description": "This project will showcase automation tests being used to practice Playwright skills.",
   "main": "index.js",
   "scripts": {
+    "app": "node app/refinance-calculator/server.js",
     "agent": "node agent/explore.js"
   },
   "repository": {
