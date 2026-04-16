@@ -51,6 +51,11 @@ test.describe('Auto Loan Refinance Calculator', () => {
 
     await expect(page.getByText('Current Interest Rate must be at least 0.1%.')).toBeVisible();
     await expect(page.getByRole('listitem')).toHaveCount(0);
+
+    await fillAndSubmitLoanForm(page, '18000', '0.05', '48');
+
+    await expect(page.getByText('Current Interest Rate must be at least 0.1%.')).toBeVisible();
+    await expect(page.getByRole('listitem')).toHaveCount(0);
   });
 
   test('should show error when Remaining Term is blank', async ({ page }) => {
@@ -66,6 +71,13 @@ test.describe('Auto Loan Refinance Calculator', () => {
     await fillAndSubmitLoanForm(page, '18000', '6.5', '0');
 
     await expect(page.getByText('Remaining Term must be at least 1 month.')).toBeVisible();
+    await expect(page.getByRole('listitem')).toHaveCount(0);
+  });
+
+  test('should show error when Remaining Term is a decimal and not a whole number', async ({ page }) => {
+    await fillAndSubmitLoanForm(page, '18000', '6.5', '12.5');
+
+    await expect(page.getByText('Remaining Term must be a whole number.')).toBeVisible();
     await expect(page.getByRole('listitem')).toHaveCount(0);
   });
 
