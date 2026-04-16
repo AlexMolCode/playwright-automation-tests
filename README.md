@@ -21,7 +21,7 @@ Both bugs were fixed and regression tests added. See [agent/report.md](agent/rep
 To run the agent (requires an Anthropic API key in `.env`):
 ```
 npm run app          # start the app on port 4200
-node agent/explore.js   # run the agent
+npm run agent    # run the agent
 ```
 
 ### How to use the app manually
